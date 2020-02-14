@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'aonagireisyo';
+  src: url('./font/aonagireisyoshimo.otf') format('otf');
+}
+
 body {
 	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
@@ -21,6 +26,7 @@ header {
 	width:100vw;
 	padding:10px 0;
 	border-bottom: solid 1px #d7d7e1;
+	font-family: 'aonagireisyo';
 }
 
 .logo img {
@@ -165,7 +171,7 @@ i {
 
 
 #main p{
-	line-height:1.5em;
+	line-height:1.8em;
 }
 .intro{
 	font-size:1.4em;
@@ -455,7 +461,6 @@ table a{
 	}
 	header{
 		width:100vw;
-		height:100px;
 	}
 	.logo{
 		border:none;
@@ -508,7 +513,11 @@ table a{
 		border: 1px solid #0a275d;
 	}
 	.header-photo{
-		display:none;
+		margin:0 10vw 40px;
+		width:auto;
+		height:calc(100vh - 290px);
+		
+
 	}
 	.header-message{
 		font-size:1.7em;
@@ -521,6 +530,9 @@ table a{
 		margin-left:calc(50vw - 110px);
 		border-radius: 6px;
 		font-size:0.65em
+	}
+	#main p{
+		line-height:1.5em;
 	}
 	.intro-g h3{
 		font-size:2.4em;
@@ -546,7 +558,7 @@ table a{
 	}
 	.sec2 li p{
 		padding-left:110px;
-		font-size:0.75em;
+		font-size:0.6em;
 	}
 	.steps{
 		overflow:hidden;
@@ -576,7 +588,7 @@ table a{
 		font-size:0.7em
 	}
 	.sec2 li p{
-		font-size:0.9em;
+		font-size:0.7em;
 	}
 	.step{
 		font-size:0.8em;
