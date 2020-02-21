@@ -77,20 +77,23 @@ i {
 	font-family: serif;
 	position: relative;
 	width: 70vw;
-	padding: 90px 8vw;
-	font-size: 1.4em;
+	padding: 82px 8vw;
+	font-size: 1.3em;
 	font-weight: 700;
+	color:#222;
 	bottom: 20px;
 	opacity: 0.75;
 	max-width: 545px;
+	line-height: 1.5em;
 }
 
 .header-message h1 {
 	display: block;
 	width: 60vw;
 	font-size: 3em;
-	line-height: 1.2em;
 	margin: 10px 0;
+	line-height: 1.15em;
+
 }
 
 .account-group {
