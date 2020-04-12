@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese" rel="stylesheet"> </head>
+  <script src="assets/js/main.js" type="text/javascript"></script>
 <body>
   <!-- Wrapper -->
   <div id="wrapper">
@@ -27,20 +28,35 @@
         </div></a>
       </div>
       <div class="logo-bg">
-      <div class="logo">共泳会</div>
+        <div class="logo">共泳会</div>
       </div>
       <div class="menu-bg">
-        <div class="menu">
-          <i class="fas fa-bars"></i>
-        </div>
-        <span class="disc-menu"> MENU</span>
-        <div class="menu-nav">
+        <a href="javascript:NavOpen();">
+          <div class="menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <span class="disc-menu"> MENU</span>
+        </a>
+        <a href="javascript:NavClose();">
+          <div id="nav-shadow" class="nav-shadow"></div>
+        </a>
+        <div id="nav-close" class="menu-nav">
+          <div class="q nav-title">Contact Us</div>
+          <div class="q icons">
+            <a href="https://lin.ee/qId6klQ"><span class="c-icon"><i class="gray fab fa-line"></i></span></a>
+            <a href="https://twitter.com/swim_kek?s=20"><span class="r-icon b-gray"><i class="white fab fa-twitter"></i></span></a>
+            <a href="https://www.instagram.com/kek.swim/"><span class="r-icon b-gray"><i class="white fab fa-instagram"></i></span></a>
+            <a href="mailto:kek.swim@gmail.com?subject=【共泳会】お問い合わせ&amp;body=氏名：内容："><span class="c-icon"><i class="gray fas fa-envelope-square"></i></span></a>
+          </div>
           <ul>
-           <li>LINE</li>
-           <li>Twitter</li>
-           <li>Instagram</li>
-           <li>G-mail</li>
+           <a href="https://lin.ee/qId6klQ"><li>LINE</li></a>
+           <a href="https://twitter.com/swim_kek?s=20"><li>Twitter</li></a>
+           <a href="https://www.instagram.com/kek.swim/"><li>Instagram</li></a>
+           <a href="mailto:kek.swim@gmail.com?subject=【共泳会】お問い合わせ&amp;body=氏名：内容："><li>Gmail</li></a>
           </ul>
+          <a href="javascript:NavClose();">
+            <div class="cancel">キャンセル</div>
+          </a>
         </div>
       </div>
     </div>

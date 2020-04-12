@@ -101,6 +101,7 @@ header{
 .menu-nav{
 	display:none;
 }
+
 .header-message{
 	position:absolute;
 	top:130px;
@@ -453,6 +454,128 @@ table a {
 .copyright {
 	text-align: center;
 }
+header a{
+	color:black;
+}
+@media screen and (max-width:800px) {
+	.menu-nav{
+		display:block;
+		position:fixed;
+		left:0;
+		bottom:0;
+		width:100vw;
+		background:white;
+		height:calc(15vw + 200px);
+		z-index:10;
+	}
+	#nav-close{
+		bottom:calc(-15vw - 200px);
+		transition:all 0.2s;
+		-webkit-transition:all 0.2s;
+	}
+	#nav-open{
+		bottom:0;
+		animation-name: nav-open;
+		animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    		animation-duration: 0.2s;
+	}
+	.nav-shadow{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100vw;
+		height:100vh;
+		background:rgba(0,0,0,0.7);
+		z-index:9;
+	}
+	#nav-shadow{
+		display:none;
+	}
+	#nav-shadow-active{
+		display:block;
+		animation-name: shadow-active;
+    		animation-duration: 0.25s;
+	}
+	@keyframes shadow-active{
+	0%{
+		opacity:0;
+	}50%{
+		opacity:0;
+	}100%{
+		opacity:1;
+	}
+	}
+	@keyframes nav-open{
+	0%{
+		transform: translateY(calc(15vw + 200px));
+	}
+	100%{
+		transform: translateY(0);
+	}
+	}
+	.nav-title{
+		font-size:14px;
+		padding:15px;
+	}
+	.white{color:white;}.gray{color:#222;}.b-gray{background-color:#222;}
+	.icons{
+		overflow:hidden;
+		padding-left:1vw;
+	}
+	.r-icon{
+		display:block;
+		float:left;
+		margin:20px 0 20px 4vw;
+		padding-left:5vw;
+		padding-top:4vw;
+		width:14vw;
+		height:15vw;
+		font-size:10vw;
+		border-radius:50%;
+	}
+	.c-icon{
+		display:block;
+		float:left;
+		margin:15px 0 25px 4vw;
+		width:19vw;
+		height:19vw;
+		font-size:20vw;
+	}
+	.line-icon{
+		font-size:20vw;
+		padding-left:0;
+	}
+	.menu-nav ul{
+		position:absolute;
+		left:0;
+		top:calc(74px + 18vw);
+		padding-left:2vw;
+		padding-right:0;
+		margin:0;
+	}
+	.menu-nav li{
+		list-style:none;
+		display:block;
+		float:left;
+		width:23vw;
+		padding:0;
+		margin:0;
+		text-align:center;
+		font-size:calc(2vw + 6px);
+	}
+	.cancel{
+		position:absolute;
+		bottom:0;
+		left:0;
+		height:60px;
+		line-height:60px;
+		width:100vw;
+		text-align:center;
+		border-top:1px solid #ccc;
+		background:#fcfcfc;
+		font-size:14px;
+	}
+}
 @media screen and (min-width:500px) {
 	.header-mainmessage {
 		font-size:48px;
@@ -463,6 +586,9 @@ table a {
 	}
 }
 @media screen and (min-width:800px) {
+	.q{
+		display:none;
+	}
 	body {
 		font-size: 14px;
 	}
