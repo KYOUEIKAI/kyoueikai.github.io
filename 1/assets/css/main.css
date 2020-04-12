@@ -114,7 +114,6 @@ header{
 	color:#FFF;
 }
 .header-mainmessage{
-	font-family:Noto Sans Japanese;
 	padding-left:15px;
 	font-weight:700;
 	font-size:40px;
@@ -158,7 +157,6 @@ i {
 	padding: 0 3%;
 	position:absolute;
 	top:440px;
-	font-family:Noto Sans Japanese;
 	font-weight:500;
 }
 
