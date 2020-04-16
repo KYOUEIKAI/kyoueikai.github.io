@@ -120,7 +120,7 @@ header a {
 .header-message {
 	position: absolute;
 	top: 200px;
-	padding:0 30px;
+	padding:0 20px;
 	color: #FFF;
 }
 .header-mainmessage {
@@ -130,11 +130,11 @@ header a {
 }
 
 .header-submessage {
-	width: 92vw;
+	width: calc(100vw - 40px);
 	padding: 10px 0;
 	margin-top: 5px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 14px;
 	line-height: 1.7em;
 	color: #FFF;
 }
