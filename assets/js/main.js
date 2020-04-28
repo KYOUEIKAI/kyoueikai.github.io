@@ -16,3 +16,7 @@
             target.id = "form-fixed";
             return false;
         }
+		window.onload = function() {
+  const spinner = document.getElementById('pattern');
+  spinner.classList.add('loaded');
+}
