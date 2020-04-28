@@ -3,6 +3,8 @@
             target.id = "nav-open";
             target = document.getElementById("nav-shadow");
             target.id = "nav-shadow-active";
+            target = document.getElementById("form-fixed");
+            target.id = "form-none";
             return false;
         }
         function NavClose() {
@@ -10,5 +12,7 @@
             target.id = "nav-close";
             target = document.getElementById("nav-shadow-active");
             target.id = "nav-shadow";
+		    target = document.getElementById("form-none");
+            target.id = "form-fixed";
             return false;
         }
