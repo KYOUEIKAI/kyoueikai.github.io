@@ -5,6 +5,8 @@
             target.id = "nav-shadow-active";
             target = document.getElementById("form-fixed");
             target.id = "form-none";
+            target = document.getElementById("form-fixed2");
+            target.id = "form-none2";
             return false;
         }
         function NavClose() {
@@ -13,7 +15,9 @@
             target = document.getElementById("nav-shadow-active");
             target.id = "nav-shadow";
 		    target = document.getElementById("form-none");
-            target.id = "form-fixed";
+            target.id = "form-fixed";	
+			target = document.getElementById("form-none2");
+            target.id = "form-fixed2";
             return false;
         }
 		window.onload = function() {
