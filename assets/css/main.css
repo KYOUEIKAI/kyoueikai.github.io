@@ -880,7 +880,7 @@ table a {
 		padding-bottom:30px;
 	}
 }
-@media screen and (min-width:890px) {
+@media screen and (min-width:920px) {
 	.header-form{
 		width:186px;
 		right: calc(50vw - 415px);
