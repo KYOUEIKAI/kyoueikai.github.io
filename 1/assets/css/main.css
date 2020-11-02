@@ -1,3 +1,44 @@
+html {
+    height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color:#484848;
+	font-family:'Noto Sans JP';
+	height:100%;
+}
+
+.f{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:214px;
+	height:65px;
+	padding:0 calc(50vw - 107px);	
+	border-top:1px solid #DDD;
+	background:#FFF;
+}
+.f a{
+	display:block;
+	width:67px;
+	height:65px;
+	margin:0 2px;
+	background:#717171;
+	float:left;
+}
+#schedule-close{
+	display:none;
+}
+#schedule-open{
+	display:block;
+	position:absolute;
+	z-index:100;
+	top:55px;
+	padding:0 24px;
+}
+
 @font-face {
 	font-family: 'Aonagi';
 	src: url("../fonts/Aonagireisyo_Simo.otf");
@@ -50,8 +91,6 @@ a:hover{
 .pattern2 {
 	width: 800px;
 	height: 500px;
-	background-size:3px 3px;
-	background-image: radial-gradient(rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.2) 80%);
 	position: absolute;
 	opacity: 1;
 	z-index: 2;
@@ -76,7 +115,7 @@ header a {
 }
 .schedule-bg {
 	position: absolute;
-	right: 60px;
+	right: 10px;
 	padding: 5px;
 }
 .logo-bg {
@@ -96,9 +135,14 @@ header a {
 	color: #000;
 	text-align: center;
 	line-height: 5px;
-	font-size: 16px;
-	border: 1px solid #000;
+	font-size: 17px;
 }
+.schedule-i{
+	width:calc(100vw - 48px);
+	padding:0 ;
+	background:#FFF;
+}
+
 .logo {
 	font-family: 'Aonagi';
 	font-size: 36.5px;
@@ -106,20 +150,11 @@ header a {
 	color: #000;
 	padding: 9px 15px;
 }
-.menu {
-	width: 30px;
-	font-size: 22px;
-	margin-left: 5px;
-}
-.disc-menu {
-	display: block;
-	font-size: 10px;
-}
+
 .disc-schedule {
-	padding: 0 2px;
-}
-.menu-nav {
-	display: none;
+	padding: 0 2px 0 5px;
+	font-weight:bold;
+	text-decoration:underline;
 }
 .header-message {
 	position: absolute;
@@ -172,96 +207,7 @@ a {
 #form-fixed2{
 	animation:nav-fade 1s;
 }
-.header-form {
-	position: fixed;
-	bottom: 65px;
-	padding: 15px 2vw;
-	font-size: 20px;
-	font-weight: 700;
-	color: #FBF9FC;
-	width: 78vw;
-	margin: 0 9vw;
-	text-align: center;
-	background:#003dbd;
-	border-radius:60px;
-	box-shadow: 0px 0px 10px 2px rgba(20,20,20,0.2);
-	z-index: 100;
-	overflow: hidden;
-}
-.header-form::after{
-	  display: block;
-  content: '';
-	position: absolute;
-	  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .2s cubic-bezier(.8,0,.3,1);
-  transition: all .2s cubic-bezier(.8,0,.3,1);
-	bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius:60px;
-  -webkit-transform: scale(.5);
-  transform: scale(.5);
 
-}
-.header-form:hover::after {
-	  border:1px solid rgba(255,255,255,0.4);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.header-form2 {
-	position: fixed;
-	bottom: 0;
-	padding: 10px 15px;
-	font-size: 13px;
-	font-weight: 700;
-	color: #FBF9FC;
-	width: calc(100vw - 30px);
-	height:40px;
-	margin: 0;
-	background:rgba(60,60,60,0.8);
-	z-index: 99;
-	overflow: hidden;
-}
-.m2-msg{
-	width:43%;
-}
-.m2-link{
-	position:absolute;
-	width:50%;
-	right:5%;
-	bottom:6px;
-	padding:14px 0;
-	background:#07b53b;
-	text-align:center;
-	box-shadow: 0.5px 1.7px 0px 0.6px rgba(33,121,44,0.8);
-	border-radius:7px;
-}
-.m2-link::after{
-	  display: block;
-  content: '';
-	position: absolute;
-	  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .2s cubic-bezier(.8,0,.3,1);
-  transition: all .2s cubic-bezier(.8,0,.3,1);
-	bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(.5);
-  transform: scale(.5);
-
-}
-.m2-link:hover::after {
-	  border:1px solid rgba(255,255,255,0.4);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
 .forms {
 	color: #FFF;
 	float: left;
