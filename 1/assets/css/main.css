@@ -13,11 +13,11 @@ body{
 }
 #wrapper{
 	transform:translate(0,0);
-	transition:0.4s;
+	transition-delay:0.2s;
 }
 #wrapper-left{
 	transform: translate(-100%, 0);
-	transition:0.4s;
+	transition-delay:0.2s;
 }
 @font-face {
 	font-family: 'Aonagi';
@@ -101,12 +101,12 @@ h3{
 #blue{
 	color:#FFF;
 	background:#0B7BD5;
-	transition-delay:0.4s;
+	transition-delay:0.2s;
 }
 #gray{
 	color:#FFF;
 	background:#C4C4C4;
-	transition-delay:0.4s;
+	transition-delay:0.2s;
 }
 .scheduleFrame {
 	position:absolute;
@@ -153,11 +153,11 @@ td{
 }
 #entry{
 	transform:translate(100%, 0);
-	transition:0.4s;
+	transition-delay:0.2s;
 }
 #entry-active{
 	transform:translate(0, 0);
-	transition:0.4s;
+	transition-delay:0.2s;
 }
 .entry-form {
 	width:100%;
