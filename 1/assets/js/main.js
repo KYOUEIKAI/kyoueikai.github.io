@@ -1,12 +1,14 @@
         function NavOpen() {
-			target = document.getElementById("schedule-close");
-			target2 = document.getElementById("schedule-open");
-            target.id = "schedule-open";
-			target2.id = "schedule-close";
+			target = document.getElementById("wrapper");
+			target2 = document.getElementById("entry");
+            target.id = "wrapper-left";
+			target2.id = "entry-active";
             return false;
         }
         function NavClose() {
-			target = document.getElementById("schedule-open");
-            target.id = "schedule-close";
+			target2 = document.getElementById("entry-active");
+			target = document.getElementById("wrapper-left");
+            target2.id = "entry";
+			target.id = "wrapper";
             return false;
         }
