@@ -29,7 +29,7 @@ body{
 }
 header {
 	height:50px;
-	border-bottom:1px solid #676D71;
+	border-bottom:1px solid #E6E6E6;
 }
 .logo {
 	font-family: 'Aonagi';
@@ -69,8 +69,8 @@ h3{
 .infoFrame{
 	margin:0;
 	padding:0;
-	border-top:1px solid #676D71;
-	border-bottom:1px solid #676D71;
+	border-top:1px solid #E6E6E6;
+	border-bottom:1px solid #E6E6E6;
 	width:100%;
 	position:absolute;
 	left:0;
@@ -87,7 +87,7 @@ h3{
 	text-decoration:none;
 }
 .white{
-	border:2px solid #676D71;
+	border:2px solid #E6E6E6;
 	color:#111;
 }
 .blue{
@@ -110,7 +110,7 @@ h3{
 }
 .scheduleFrame {
 	position:absolute;
-	border:1px solid #676D71;
+	border:1px solid #E6E6E6;
 	border-radius:5px;
 	width:calc(100% - 38px);
 }
@@ -124,7 +124,7 @@ h3{
 	width:100%;
 	padding:10px 19px;
 	background-color:#fff;
-	border-top:1px solid #676D71;
+	border-top:1px solid #E6E6E6;
 	z-index:100;
 }
 .b-button{
