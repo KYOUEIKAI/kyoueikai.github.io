@@ -5,7 +5,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
-	color:#676D71;
+	color:#111;
 	font-family:'Noto Sans JP';
 	height:100%;
 	width:100%;
@@ -13,11 +13,11 @@ body{
 }
 #wrapper{
 	transform:translate(0,0);
-	transition:0.6s;
+	transition:0.4s;
 }
 #wrapper-left{
 	transform: translate(-100%, 0);
-	transition:0.6s;
+	transition:0.4s;
 }
 @font-face {
 	font-family: 'Aonagi';
@@ -76,17 +76,19 @@ h3{
 	left:0;
 }
 .button{
+	display:block;
 	margin:17px 0;
 	width:100%;
 	font-size:14px;
-	padding:18px 0;
+	padding:14px 0;
 	font-weight:bold;
 	text-align:center;
 	border-radius:5px;
+	text-decoration:none;
 }
 .white{
 	border:2px solid #676D71;
-	color:#676D71;
+	color:#111;
 }
 .blue{
 	color:#FFF;
@@ -96,13 +98,21 @@ h3{
 	color:#FFF;
 	background:#C4C4C4;
 }
-.button a{
-  	text-decoration:none;
+#blue{
+	color:#FFF;
+	background:#0B7BD5;
+	transition-delay:0.4s;
+}
+#gray{
+	color:#FFF;
+	background:#C4C4C4;
+	transition-delay:0.4s;
 }
 .scheduleFrame {
+	position:absolute;
 	border:1px solid #676D71;
 	border-radius:5px;
-	width:100%;
+	width:calc(100% - 38px);
 }
 .schedule {
 	background:#E6E7E7;
@@ -110,7 +120,7 @@ h3{
 .bottom-bar{
 	position:fixed;
 	bottom:0;
-	height:60px;
+	height:50px;
 	width:100%;
 	padding:10px 19px;
 	background-color:#fff;
@@ -118,15 +128,13 @@ h3{
 	z-index:100;
 }
 .b-button{
-	padding:18px 0;
+	padding:14px 0;
 	width:160px;
 	border-radius:13px;
 	float:left;
 	text-align:center;
-	margin-right:40px;
-	width:calc(50% - 40px);
-}
-.b-button a, span{
+	margin-right:20px;
+	width:calc(50% - 28px);
 	text-decoration:none;
 	font-size:18px;
 	font-weight:bold;
@@ -145,11 +153,11 @@ td{
 }
 #entry{
 	transform:translate(100%, 0);
-	transition:0.6s;
+	transition:0.4s;
 }
 #entry-active{
 	transform:translate(0, 0);
-	transition:0.6s;
+	transition:0.4s;
 }
 .entry-form {
 	width:100%;
