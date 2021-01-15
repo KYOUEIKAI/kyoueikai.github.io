@@ -113,12 +113,16 @@ h3{
 	background:#333;
 	transition-delay:0.2s;
 }
-.scheduleFrame {
+.w-scheduleFrame {
 	position:absolute;
 	border:1px solid #EEE;
 	background:#FFF;
-	width:calc(100% - 38px);
+	width:calc(100% - 50px);
 	border-radius:6px;
+	padding:0 5px;
+}
+.scheduleFrame {
+	width:100%;
 }
 .schedule {
 	background:#F8F8F8;
