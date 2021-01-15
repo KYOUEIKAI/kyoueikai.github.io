@@ -61,7 +61,7 @@ h1{
 }
 h2{
 	font-size:13px;
-	font-weight:300;
+	font-weight:400;
 	margin:3px 0 17px;
 }
 h3{
@@ -85,7 +85,7 @@ h3{
 	padding:14px 0;
 	font-weight:bold;
 	text-align:center;
-	border-radius:5px;
+	border-radius:8px;
 	text-decoration:none;
 }
 .white{
@@ -94,52 +94,56 @@ h3{
 }
 .blue{
 	color:#FFF;
-	background:#0B7BD5;
+	background:#0051e0;
 }
 .gray{
 	color:#FFF;
 	background:#C4C4C4;
 }
 #blue{
-	color:#FFF;
-	background:#0B7BD5;
+	color:#999;
+	background:#FFF;
 	transition-delay:0.2s;
 }
 #gray{
 	color:#FFF;
-	background:#C4C4C4;
+	background:#333;
 	transition-delay:0.2s;
 }
 .scheduleFrame {
 	position:absolute;
 	border:1px solid #EEE;
 	background:#FFF;
-	width:90%;
+	width:calc(100% - 38px);
 }
 .schedule {
-	background:#E6E7E7;
+	background:#F8F8F8;
 }
 .bottom-bar{
 	position:fixed;
-	bottom:0;
-	height:50px;
-	width:100%;
-	padding:10px 19px;
+	bottom:38px;
 	background-color:#fff;
-	border-top:1px solid #EEE;
+	border:1px solid #ddd;
+	border-radius:6px;
 	z-index:100;
+	width:calc(100% - 38px);
+	margin:0 19px;
+	overflow:hidden;
 }
 .b-button{
-	padding:14px 0;
-	width:160px;
-	border-radius:13px;
+	padding:7px 0;
 	float:left;
 	text-align:center;
-	margin-right:20px;
-	width:calc(50% - 28px);
+	width:50%;
 	text-decoration:none;
-	font-size:18px;
+	font-size:14px;
 	font-weight:bold;
+}
+.c-top-button{
+	border-radius: 6px 0 0 6px;
+}
+.c-entry-button{
+	border-radius: 0 6px 6px 0;
 }
 .fee table{
 	width:100%;
@@ -163,5 +167,5 @@ td{
 }
 .entry-form {
 	width:100%;
-	height:calc(100vh - 80px);
+	height:100vh;
 }
