@@ -52,15 +52,18 @@ header {
 	position:relative;
 }
 section{
-	padding:50px 19px 17px;
+	margin:40px 0;
+	padding:0px 19px;
 	overflow:hidden;
 }
 h1{
 	font-size:24px;
 	margin-bottom:3px;
+	letter-spacing:0.3px;
 }
 h2{
 	font-size:13px;
+	line-height:1.6;
 	font-weight:400;
 	margin:3px 0 17px;
 }
@@ -115,6 +118,7 @@ h3{
 	border:1px solid #EEE;
 	background:#FFF;
 	width:calc(100% - 38px);
+	border-radius:6px;
 }
 .schedule {
 	background:#F8F8F8;
