@@ -6,6 +6,7 @@ body{
 	padding: 0;
 	font-size: 14px;
 	color:#111;
+
 	font-family:'Noto Sans JP';
 	height:100%;
 	width:100%;
@@ -15,11 +16,17 @@ h2 a{
 	color:#111;
 }
 #wrapper{
-	transform:translate(0,0);
+	display:inherit;
+	position:absolute;
+	overflow:scroll;
+	top:96px;
+	width:100%;
+		background-color:#eee;
+	height:calc(100vh - 96px);
 	transition-delay:0.2s;
 }
 #wrapper-left{
-	transform: translate(-100%, 0);
+	display:none;
 	transition-delay:0.2s;
 }
 @font-face {
@@ -33,6 +40,9 @@ h2 a{
 header {
 	height:50px;
 	border-bottom:1px solid #EEE;
+	position:fixed;
+	width:100%;
+	background:#fff;
 }
 .logo {
 	font-family: 'Aonagi';
@@ -52,13 +62,17 @@ header {
 	position:relative;
 }
 section{
-	margin:40px 0;
-	padding:0px 19px;
+	position:relative;
+	margin:20px 0;
+	padding:19px;
 	overflow:hidden;
+	border-bottom:2px solid #f8f8f8;
+	box-shadow:0px 0px 2px 0px #dedede;
+	background:#FFF;
 }
 h1{
 	font-size:24px;
-	margin-bottom:3px;
+	margin:0 0 3px;
 	letter-spacing:0.3px;
 }
 h2{
@@ -73,7 +87,7 @@ h3{
 	margin:3px 0 17px;
 }
 .infoFrame{
-	margin:0;
+	margin:17px 0 20px;
 	padding:0;
 	border-top:1px solid #EEE;
 	width:100%;
@@ -82,7 +96,7 @@ h3{
 }
 .button{
 	display:block;
-	margin:17px 0;
+	margin:17px 0 0;
 	width:100%;
 	font-size:14px;
 	padding:14px 0;
@@ -104,13 +118,13 @@ h3{
 	background:#C4C4C4;
 }
 #blue{
-	color:#999;
-	background:#FFF;
+	font-weight:400;
 	transition-delay:0.2s;
+	border-bottom:2px solid #ddd;
 }
 #gray{
-	color:#FFF;
-	background:#333;
+	font-weight:700;
+	border-bottom: 2px solid #0051e0;
 	transition-delay:0.2s;
 }
 .w-scheduleFrame {
@@ -124,34 +138,21 @@ h3{
 .scheduleFrame {
 	width:100%;
 }
-.schedule {
-	background:#F8F8F8;
-}
 .bottom-bar{
-	position:fixed;
-	bottom:19px;
-	background-color:#fff;
-	border:1px solid #ddd;
-	border-radius:6px;
+	background-color:#f8f8f8;
 	z-index:100;
-	width:calc(100% - 38px);
-	margin:0 19px;
+	width:100%;
+	margin:0px;
 	overflow:hidden;
 }
 .b-button{
-	padding:7px 0;
+	padding:10px 0;
 	float:left;
 	text-align:center;
 	width:50%;
 	text-decoration:none;
-	font-size:14px;
+	font-size:16px;
 	font-weight:bold;
-}
-.c-top-button{
-	border-radius: 6px 0 0 6px;
-}
-.c-entry-button{
-	border-radius: 0 6px 6px 0;
 }
 .fee table{
 	width:100%;
@@ -163,7 +164,7 @@ td{
 .entry {
 	width:100%;
 	position:fixed;
-	top:0;
+	top:98px;
 }
 #entry{
 	transform:translate(100%, 0);
@@ -175,6 +176,5 @@ td{
 }
 .entry-form {
 	width:100%;
-	margin-top:40px;
 	height:100vh;
 }

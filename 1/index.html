@@ -10,18 +10,24 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <body>
-<div id="wrapper">
 <header>
   <div class="menu-bar-wrap">
     <span class="menu-bar bar1"></span>
     <span class="menu-bar bar2"></span> 
 	<span class="menu-bar bar3"></span>
   </div>
+  <div class="logo">共泳会</div>
+<div class="bottom-bar">
+		<a class="b-button c-top-button" id="gray" onclick="NavClose()">トップページ</a>
+		<a class="b-button c-enrty-button" id="blue" onclick="NavOpen()" >参加申込み</a>
+	</div>
 </header>
 
 
 
-<div class="logo">共泳会</div>
+
+<div id="wrapper">
+
 <section class="schedule">
 	<h1>スケジュール</h1>
 	<h2>日程_場所_集合-解散_備考</h2>
@@ -30,7 +36,7 @@
 </section>
 <section class="info">
 	<h1>新着情報</h1>
-	<h2>最新情報は<a href="">Twitter</a>でも随時発信しています。読み込めない場合は<a href="">こちら</a></h2>
+	<h2>最新情報は<a href="https://twitter.com/swim_kek">Twitter</a>でも随時発信しています。読み込めない場合は<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9-bLadQ4iy8S55JZttwbNjqCw2nDZxV1B3kos3Z2-b3rdyMSZ7YYkJMjbJWa0gHAUGkB_4DlKJa1G/pubhtml?gid=0&single=true">こちら</a></h2>
 	<iframe id="wrapper" class="infoFrame" src="https://script.google.com/macros/s/AKfycbwF9eQyeBrfyN7XMOCRWV2LD7o3oKvGbOsN4XC_wtmcYxp9cCLp3Q7cRw/exec" frameborder="0" style="height:280px"></iframe><div style="height:280px;"></div>
 </section>
 
@@ -94,10 +100,7 @@
 </section>
 </div>
 <div id="entry" class="entry"><iframe class="entry-form" src="https://docs.google.com/forms/d/e/1FAIpQLSc0ZYb8e-nRwAkoN4gTsCrG_9WYdYqmgHPvsQlM2OJElu4xFw/viewform?embedded=true"   frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe></div>
-<div class="bottom-bar">
-		<a class="b-button c-top-button" id="gray" onclick="NavClose()">トップページ</a>
-		<a class="b-button c-enrty-button" id="blue" onclick="NavOpen()" >参加申込み</a>
-	</div>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
