@@ -64,7 +64,7 @@ section{
 	padding:19px;
 	overflow:hidden;
 	border-bottom:2px solid #f8f8f8;
-	box-shadow:0px 0px 2px 0px #dedede;
+	box-shadow:0px 0px 0px 1px #dedede;
 	background:#FFF;
 }
 h1{
