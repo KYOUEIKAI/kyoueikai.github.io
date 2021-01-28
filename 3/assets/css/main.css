@@ -1,0 +1,300 @@
+html {
+    height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color:#111;
+
+	font-family:'Noto Sans JP';
+	width:100%;
+	position:absolute;
+}
+#wrapper{
+	display:inherit;
+    padding:0 0 10px;
+		background-color:#eee;
+	transition-delay:0.2s;
+}
+#wrapper-left{
+	display:none;
+	transition-delay:0.2s;
+}
+@font-face {
+	font-family: 'Aonagi';
+	src: url("../fonts/Aonagireisyo_Simo.otf");
+}
+@font-face {
+	font-family: 'Nyala';
+	src: url("../fonts/Nyala-focus.ttf");
+}
+header {
+	height:51px;
+	position:fixed;
+	width:100%;
+	background:#fff;
+	z-index:200;
+	border-bottom:2px solid #ddd;
+}
+header .logo{
+		font-size: 33px;
+	display: block;
+	top:0;
+	color: #111;
+	padding: 9px 16px 5px;
+}
+.headline .logo{
+	font-size:57px;
+}
+.headline h2{
+	margin:14px auto;
+	font-size:20px;
+	font-weight:700;
+	
+}
+.headline{
+	text-align: center;
+	padding:40px 0 50px;
+}
+.logo {
+	font-family: 'Aonagi';
+}
+article{
+	line-height:1.6;
+}
+.menu-bar-wrap{
+	display:block;
+	position:absolute;
+	padding:5px 0;
+	right:18px;
+	top:5px;
+}
+.menu-bar{
+	display:block;
+	background:#888888;
+	width:24px;
+	margin:6px 10px;
+	height:2px;
+}
+	
+.sub-header{
+	padding-top:50px;
+}
+.top-button{
+    text-decoration: none;
+    display: block;
+	background:#0051e0;
+    color: #FFF;
+    padding: 25px 20px;
+	font-size:16px;
+	font-weight:600;
+	text-align: center;
+}
+section{
+	position:relative;
+	padding:20px 19px;
+	overflow:hidden;
+	background:#FFF;
+}
+.bottom-bar{
+	background-color:#f8f8f8;
+	z-index:100;
+	width:100%;
+	margin:0px;
+	overflow:hidden;
+	position: sticky;
+	position: -webkit-sticky;
+	top:50px;
+	z-index:201;
+	border-top:2px solid #ddd;
+}
+.b-button{
+	padding:10px 0;
+	float:left;
+	text-align:center;
+	width:50%;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+}
+h1{
+    clear: both;
+    font-size: 24px;
+    color: #111;
+	margin:0 auto 5px;
+	
+}
+h2{
+	font-size:13px;
+	font-weight:400;
+	line-height:1.6;
+	margin:5px 0 20px;
+}
+h2 a{
+	color:#111;
+}
+h3{
+	font-size:13px;
+	font-weight:300;
+	margin:3px 0 17px;
+}
+.infoFrame{
+	margin:0;
+	padding:0;
+	border-top:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+	width:100%;
+	position:absolute;
+	left:0;
+}
+
+.white{
+	border:2px solid #EEE;
+	color:#111;
+}
+.gray{
+	color:#FFF;
+	background:#C4C4C4;
+}
+#blue{
+	font-weight:400;
+	transition-delay:0.2s;
+	border-bottom:2px solid #ddd;
+}
+#gray{
+	font-weight:700;
+	border-bottom: 2px solid #0051e0;
+	transition-delay:0.2s;
+}
+.w-scheduleFrame {
+	position:relative;
+	border:1px solid #EEE;
+	background:#FFF;
+	width:100%;
+	border-radius:6px;
+	padding:0 5px;
+}
+.disc{
+	padding-top:10px;
+	color:#111;
+}
+.disc a{
+	color:#111;
+}
+.scheduleFrame {
+	width:100%;
+}
+
+table{
+	width:100%;
+	font-size:14px;
+	max-width:400px;
+}
+.entry {
+	width:100%;
+}
+#entry{
+	display:none;
+	transition-delay:0.2s;
+}
+#entry-active{
+	display:inherit;
+	transition-delay:0.6s;
+}
+.entry-form {
+	width:100%;
+	height:7500px;
+}
+ul{
+	margin:10px 0;
+	padding:0;
+	list-style: none;
+	line-height:1.6;
+}
+li{
+	padding:7px 0;
+	font-weight:600;
+}
+a.button{
+	background:#0051e0;
+	color:#fff;
+	box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+.button{
+	font-weight:500;
+	margin:5px auto;
+	display:block;
+	text-align:center;
+	padding:12px 0;
+	border-radius:6px;
+	background:#e6e6e6;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  margin:15px auto 20px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #dedede;
+}
+h4{
+	margin:20px 0 5px;
+}
+h5{
+	font-size:13px;
+	margin:5px;
+}
+tr{
+	line-height:1.8;
+}
+#menu-content{
+	display:none;
+}
+#menu-content-is-active{
+	position:fixed;
+	z-index:205;
+	background: #fff;
+	width:calc(100% - 72px);
+    box-shadow: 0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%);
+    animation: g .2s ease forwards;
+	margin:12px;
+	padding:24px;
+	border-radius:4px;
+}
+#menu-content-is-active a{
+	color:#111;
+}
+.menu-header{
+	height:36px;
+	padding-bottom:16px;
+	border-bottom:1px solid #ddd;
+	font-size:35px;
+	
+}
+.x-bar {
+	background:#111;
+	width:20px;
+	height:2px;
+	right:0px;
+	position: absolute;
+	top:30px;
+	margin:5px;
+}
+.bar4{
+	transform:rotate(45deg);
+}
+.bar5{
+	transform:rotate(135deg);
+}
+@keyframes g{
+	0% {
+    opacity: 0;
+    transform: scale(.95);
+    transform-origin: 100% 0;
+}
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
+}
