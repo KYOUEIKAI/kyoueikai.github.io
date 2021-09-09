@@ -4,6 +4,8 @@ var topButton = document.getElementById("top-button");
 var subButton = document.getElementById("sub-button");
 var entryBtn = document.getElementById("entry-btn");
 var entry = document.getElementById("entry");
+var cancelBtn = document.getElementById("cancel-btn");
+
 
 subButton.onclick = function () {
     main1.classList.add("visi");
@@ -28,4 +30,10 @@ topButton.onclick = function () {
 }
 entryBtn.onclick = function () {
     entry.classList.toggle("visi");
+    cancelBtn.classList.toggle("visi");
+}
+cancelBtn.onclick = function () {
+    
+    entry.classList.toggle("visi");
+    cancelBtn.classList.toggle("visi");
 }
