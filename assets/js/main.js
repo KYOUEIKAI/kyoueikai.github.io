@@ -1,26 +1,39 @@
-        function NavOpen() {
-            target = document.getElementById("nav-close");
-            target.id = "nav-open";
-            target = document.getElementById("nav-shadow");
-            target.id = "nav-shadow-active";
-            target = document.getElementById("form-fixed");
-            target.id = "form-none";
-            target = document.getElementById("form-fixed2");
-            target.id = "form-none2";
-            return false;
-        }
-        function NavClose() {
-            target = document.getElementById("nav-open");
-            target.id = "nav-close";
-            target = document.getElementById("nav-shadow-active");
-            target.id = "nav-shadow";
-		    target = document.getElementById("form-none");
-            target.id = "form-fixed";	
-			target = document.getElementById("form-none2");
-            target.id = "form-fixed2";
-            return false;
-        }
-		window.onload = function() {
-  const spinner = document.getElementById('pattern');
-  spinner.classList.add('loaded');
+var main1 = document.getElementById("main1");
+var main2 = document.getElementById("main2");
+var topButton = document.getElementById("top-button");
+var subButton = document.getElementById("sub-button");
+var entryBtn = document.getElementById("entry-btn");
+var entry = document.getElementById("entry");
+var cancelBtn = document.getElementById("cancel-btn");
+
+
+subButton.onclick = function () {
+    main1.classList.add("visi");
+    main2.classList.remove("visi");
+    subButton.classList.add("white");
+    subButton.classList.remove("inner-shadow");
+    subButton.classList.remove("gray");
+    topButton.classList.remove("white");
+    topButton.classList.add("gray");
+    topButton.classList.add("inner-shadow");
+}
+
+topButton.onclick = function () {
+    main1.classList.remove("visi");
+    main2.classList.add("visi");
+    subButton.classList.remove("white");
+    subButton.classList.add("inner-shadow");
+    subButton.classList.add("gray");
+    topButton.classList.add("white");
+    topButton.classList.remove("gray");
+    topButton.classList.remove("inner-shadow");
+}
+entryBtn.onclick = function () {
+    entry.classList.toggle("visi");
+    cancelBtn.classList.toggle("visi");
+}
+cancelBtn.onclick = function () {
+    
+    entry.classList.toggle("visi");
+    cancelBtn.classList.toggle("visi");
 }
