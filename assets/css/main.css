@@ -10,7 +10,8 @@ body{
 	color: #333333;
 	list-style:none;
 }
-img{
+img{	
+	display:block;
 	width:100%;
 	max-width:400px;
 	margin:auto;
