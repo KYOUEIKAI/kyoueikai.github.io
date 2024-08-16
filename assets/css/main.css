@@ -10,7 +10,11 @@ body{
 	color: #333333;
 	list-style:none;
 }
-
+img{
+	width:100%;
+	max-width:400px;
+	margin:auto;
+}
 .wrapper{
 	max-width: 100%;
 	width:1000px;
